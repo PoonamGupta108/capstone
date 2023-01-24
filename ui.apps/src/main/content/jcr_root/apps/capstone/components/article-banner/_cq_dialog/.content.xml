@@ -24,7 +24,7 @@
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                         fieldLabel="Banner Text"
                         maxlength="{Long}100"
-                        name="./bannerText"
+                        name="./banerText"
                         required="{Boolean}true"/>
                 </items>
             </column>

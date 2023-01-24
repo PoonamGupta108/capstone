@@ -1,6 +1,7 @@
 package com.alchemytecsol.capstone.core.models;
 
 import java.text.SimpleDateFormat;
+
 import java.util.Date;
 
 import javax.annotation.PostConstruct;
@@ -9,6 +10,13 @@ import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
+
+/**
+ *      @author Poonam Kumari
+ * 
+ *      Sling Model to fetch Banner Article Component properties
+ *
+ */
 
 @Model(adaptables = Resource.class,defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class ArticleBannerModel {

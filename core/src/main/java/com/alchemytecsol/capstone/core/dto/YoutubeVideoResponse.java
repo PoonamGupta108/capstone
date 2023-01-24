@@ -1,5 +1,10 @@
 package com.alchemytecsol.capstone.core.dto;
-
+/**
+ *      @author Poonam Kumari
+ *      
+ *      Dto class for capstone core part
+ *
+ */
 public class YoutubeVideoResponse {
 
 	private String html;

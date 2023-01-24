@@ -6,6 +6,14 @@ import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
 @Model(adaptables = Resource.class,defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
+
+/**
+ *      @author Poonam Kumari
+ * 
+ *      Sling Model to fetch  Header Secondary Component properties
+ *
+ */
+
 public class SecondaryHeaderModel {
 	
 	@ValueMapValue

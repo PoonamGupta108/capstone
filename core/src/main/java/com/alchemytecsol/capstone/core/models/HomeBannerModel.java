@@ -13,6 +13,13 @@ import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.SlingObject;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
+/**
+ *      @author Poonam Kumari
+ * 
+ *      Sling Model to fetch Banner Home Component properties
+ *
+ */
+
 @Model(adaptables = {Resource.class,SlingHttpServletRequest.class},defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class HomeBannerModel {
 	
@@ -23,6 +30,11 @@ public class HomeBannerModel {
 	ResourceResolver resolver;
 	
 	List<ArticleBannerModel> bannerList;
+	
+	/**
+	 *     Post Construct method to read 5 articles properties
+	 *     to display in Home Banner Component
+	 */
 	
 	@PostConstruct
 	public void init() {

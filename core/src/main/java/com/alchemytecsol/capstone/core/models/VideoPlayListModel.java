@@ -22,17 +22,31 @@ import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
 import com.alchemytecsol.capstone.core.dto.YoutubeVideoResponse;
 
+/**
+ *      @author Poonam Kumari
+ * 
+ *      Sling Model to fetch Video Playlist Component properties
+ *
+ */
+
 @Model(adaptables = Resource.class,defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 
 public class VideoPlayListModel {
-
+	
 	@ValueMapValue
 	private String[] youTubeLinks;
 	
 	private List<YoutubeVideoResponse> videoList;
 	 
+	/**
+	 *     Post Construct method to call Youtube Oembed Service
+	 *     and fetch the response
+	 *     to display in Video Playlist Component
+	 */
+	
 	@PostConstruct
 	public void init() {
+		
 		if(youTubeLinks != null) {
 			videoList = new ArrayList<>();
 			try (CloseableHttpClient httpClient = HttpClients.createDefault()){
